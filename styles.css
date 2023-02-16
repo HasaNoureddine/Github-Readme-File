@@ -1,31 +1,66 @@
-.container {
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  height: 100vh;
+  background-image: url(../Images_ass1/cs.png);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+li {
+  margin: 5px;
+  border: 2px dotted rgb(170, 44, 44);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: large;
+  text-decoration: none;
+}
+
+li::after {
+  content: "";
+  width: 0%;
+  background-color: rgb(170, 44, 44);
+  height: 3px;
+  display: inline;
+  margin: auto;
+  transition: 0.5s;
+}
+li:hover::after {
+  width: 50%;
+}
+
+.button {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  margin: auto;
-}
-
-h1 {
-  text-align: center;
 }
 
 div {
-  border: 1px dotted black;
-  width: 50;
-  height: 25%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  font-style: italic;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
-  text-align: center;
+  border: 3px solid rgb(170, 44, 44);
+  padding: 10px;
 }
 
-img {
-  width: 50%;
+div:hover {
+  background-color: aliceblue;
+  transition: 0.5s;
+}
+
+h1 {
+  text-decoration: underline rgb(176, 35, 35);
+  font-weight: lighter;
+  font-style: italic;
+  color: brown;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
